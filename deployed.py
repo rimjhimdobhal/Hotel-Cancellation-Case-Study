@@ -12,6 +12,8 @@ with open('final_model.joblib', 'rb') as file:
     model = joblib.load(file)
 
 
+st.set_page_config(page_title= 'Hotel Cancellation Predictor', layout= 'centered', initial_sidebar_state= 'auto')
+
 st.title('INN HOTEL GROUP')
 st.header(':blue[This application will predict the chances of booking cancellation]')
 
