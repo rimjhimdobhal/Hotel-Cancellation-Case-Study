@@ -14,6 +14,13 @@ with open('final_model.joblib', 'rb') as file:
 
 st.set_page_config(page_title= 'Hotel Cancellation Predictor', layout= 'centered', initial_sidebar_state= 'auto')
 
+st.markdown(
+    """<style>html, body, [data-testid="stAppViewContainer"] {
+            color-scheme: only dark !important;
+            background-color: black !important;
+            color: white !important;}</style>""", unsafe_allow_html=True)
+
+
 st.title('INN HOTEL GROUP')
 st.header(':blue[This application will predict the chances of booking cancellation]')
 
